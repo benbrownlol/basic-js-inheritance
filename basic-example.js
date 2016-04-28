@@ -20,8 +20,8 @@ const motorbike = (fuelType) => {
 }
 
 const ducati = motorbike('petrol');
-ducati.start();
-ducati.stop();
+ducati.start(); // Engine is running, using 1 litre of petrol per mile.
+ducati.stop(); // Engine has stopped. 10 litres of petrol left.
 
 // Prototype Inheritance without 'New'
 
@@ -37,8 +37,8 @@ const car = {
 
 const bmw = Object.create(car);
 bmw.init('BMW', '135i');
-bmw.whatCar();
+bmw.whatCar(); // This car is a BMW 135i
 
 const porsche = Object.create(car);
 porsche.init('Porsche', 'Cayman S');
-porsche.whatCar();
+porsche.whatCar(); // This car is a Porsche Cayman S
